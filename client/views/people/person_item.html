@@ -2,5 +2,19 @@
   <div class="person">
     <img src="{{avatarUrl}}">
     <h3><a href="{{profileUrl}}">{{name}}</a></h3>
+    <div>Mentor in
+      <ul class="inline-list">
+        {{#each mentorTopics}}
+          <li class="radius success label">{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div>Noob in
+      <ul class="inline-list">
+        {{#each noobTopics}}
+          <li class="radius secondary label">{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
   </div>
 </template>
