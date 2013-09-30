@@ -1,0 +1,8 @@
+<template name="manageProfile">
+  <p>You are a mentor in: <input name="mentorTopics" type="text" value="{{mentorTopics}}"></p>
+  <p>You are a noob in: <input name="noobTopics" type="text" value="{{noobTopics}}"></p>
+  <p>Separate multiple topics with a comma.</p>
+  <button class="js-update"
+  {{#if hasFormChanged}}>Save{{else}}
+  disabled>Saved{{/if}}</button>
+</template>

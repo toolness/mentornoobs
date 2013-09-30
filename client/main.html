@@ -5,5 +5,10 @@
 <body>
   <h1>Mentornoobs!</h1>
   {{loginButtons}}
+
+  {{#if currentUser}}
+  {{> manageProfile currentUser}}
+  {{/if}}
+
   {{> peopleList}}
 </body>

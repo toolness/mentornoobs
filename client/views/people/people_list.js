@@ -1,3 +1,5 @@
 Template.peopleList.helpers({
-  people: Meteor.users.find()
+  people: function() {
+    return Meteor.users.find({_id: {$not: Meteor.userId()}});
+  }
 });
